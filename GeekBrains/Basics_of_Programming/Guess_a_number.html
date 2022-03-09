@@ -1,0 +1,32 @@
+<meta name="utf-8" />
+<script type="text/javascript">
+  var isPlayerFirst = true;
+  var Player1StepText = "Ход первого игрока";
+  var Player2StepText = "Ход второго игрока";
+  var exitMessage = ["q", "quit", "exit"];
+  var isExit = true;
+
+  var answer = parseInt(Math.random() * 100);
+
+  do {
+    if (isPlayerFirst) alert(Player1StepText);
+    else alert(Player2StepText);
+
+    var userAnswer = prompt("Угадайте число от 0 до 100");
+    exitMessage.forEach((message) => {
+      if (message == userAnswer.ToLowerCase) isExit = false;
+    });
+
+    userAnswer = parseInt(userAnswer);
+    if (userAnswer == answer) {
+      alert("Поздравляю, вы угадали!");
+      break;
+    } else if (userAnswer > answer) {
+      alert("Вы ввели слишком большое число.");
+    } else if (userAnswer < answer) {
+      alert("Вы ввели слишком маленькое число.");
+    }
+
+    isPlayerFirst = !isPlayerFirst;
+  } while (isExit);
+</script>

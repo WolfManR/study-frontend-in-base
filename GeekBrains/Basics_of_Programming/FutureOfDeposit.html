@@ -1,0 +1,10 @@
+<meta name="utf-8" />
+<script type="text/javascript">
+  var percent = 0.043;
+
+  var inSum = +prompt("Enter sum of valute");
+  var vklad = inSum;
+  for (let year = 1; year <= 5; year++) {
+    document.writeln("Sum on " + year + " is " + (vklad += vklad * percent).toFixed(2) + "<br>");
+  }
+</script>
