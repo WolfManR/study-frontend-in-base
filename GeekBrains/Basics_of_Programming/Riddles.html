@@ -1,0 +1,35 @@
+<meta name="utf-8" />
+<script type="text/javascript">
+  function RiddleRiddle(riddle, answers) {
+    var input = prompt(riddle);
+    var isCorrect = true;
+
+    for (const answer of answers) {
+      if (answer.toLowerCase() == input.toLowerCase()) {
+        isCorrect = true;
+        break;
+      } else isCorrect = false;
+    }
+
+    return isCorrect;
+  }
+
+  var answerCounter = 0;
+  alert("answer on riddles");
+
+  var riddles = [
+    { riddle: "Что ты никогда не сможешь съесть на завтрак", answer: ["Обед", "Ужин"] },
+    { riddle: "Что может путешествовать по свету, оставаясь в одном и том же углу", answer: ["Почтовая марка"] },
+    { riddle: "Лежит на спине - никому не нужна. Прислони к стене - пригодится она", answer: ["Лестница"] },
+  ];
+
+  riddles.forEach((element) => {
+    if (RiddleRiddle(element.riddle, element.answer)) {
+      alert("answer is correct");
+      answerCounter++;
+    } else alert("answer is not correct");
+  });
+
+  alert("number of correct answers is " + answerCounter);
+</script>
+

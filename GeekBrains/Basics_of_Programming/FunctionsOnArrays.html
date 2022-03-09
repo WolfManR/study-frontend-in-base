@@ -1,0 +1,44 @@
+<meta name="utf-8" />
+<script type="text/javascript">
+  function GenerateArray(length) {
+    var array = [];
+
+    for (var i = 1; i <= length; i++) array.push(i);
+
+    return array;
+  }
+
+  function Summ(numbers) {
+    var summ = 0;
+
+    numbers.forEach((number) => {
+      summ += number;
+    });
+
+    return summ;
+  }
+
+  function Max(numbers) {
+    var max = numbers[0];
+
+    for (var i = 1; i < numbers.length; i++) if (numbers[i] > max) max = numbers[i];
+
+    return max;
+  }
+
+  function Min(numbers) {
+    var min = numbers[0];
+
+    for (var i = 1; i < numbers.length; i++) if (numbers[i] < min) min = numbers[i];
+
+    return min;
+  }
+
+  function EvenNumbers(numbers) {
+    var array = [];
+
+    for (var i = 1; i < numbers.length; i++) if (numbers[i] % 2 == 0) array.push(numbers[i]);
+
+    return array;
+  }
+</script>

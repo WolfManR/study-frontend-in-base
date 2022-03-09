@@ -1,0 +1,229 @@
+body{
+    background: #f8f8f8;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*header*/
+.header{
+    background: url(img/headerBack.jpg);
+    overflow: hidden;
+    padding: 8px;
+    height: 70px;
+}
+.header img[alt="Logo"]{
+    float: left;
+    height: 60px;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+/*Menu styles*/
+.Menu{
+    list-style-type: none;
+    text-align: right;
+    margin-right: 60px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.Menu li{
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+.Menu li a{
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+}
+.Menu li a:hover{
+    background: #ddd;
+    color: darkred;
+    border-radius: 8px;
+}
+
+/*catalog styles*/
+.catalog{
+    overflow: hidden;
+    border: 2px solid brown;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+
+.product{
+    outline: 2px solid black;
+    text-align: center;
+    width: 190px;
+    height: 140px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.product:hover{
+    background: lightgray;
+}
+
+.product img{
+    width: 100%;
+}
+.product a{
+    text-decoration: none;
+}
+
+/*product pages styles*/
+.product-page h3{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+.thumps img{
+    outline: 2px solid brown; 
+    width: 70%;
+    float: left;
+    margin: 8px;
+}
+.thumps img:hover{
+    outline: 0px;
+}
+
+.product-page input[type=button]{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: green;
+    background: #eee;
+}
+.product-page input[type=button]:hover{
+    background: #ccc;
+}
+.product-page input[type=button]:active{
+    background: #aaa;
+}
+.product-page p::first-letter{
+    font-family: monospace;
+    font-size: 24px;
+}
+.shortdesc{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.longdesc{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.specification{
+    width: 60%;
+    outline: 2px solid #eee;
+    border-collapse: collapse;
+}
+.specification caption{
+    font-weight: bold;
+    font-size: 20px;
+    background: #aaa;
+}
+.specification caption::before{
+    content: url(img/handyman-tools.png) " ";
+}
+.specification td:first-of-type{
+    background: #eee;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 18px;
+}
+/* ul
+.specification{
+   font-family: sans-serif;
+    border: 2px solid blue;
+    list-style-image: url(img/handyman-tools.png);
+}
+*/
+
+/*contact page styles*/
+.contacts input[type=text],input[type=email]{
+    height: 16px;
+    width: 98%;
+    color: black;
+    font-size: 16px;
+    margin: 2px;
+}
+.contacts input[type=text]{
+    text-transform: capitalize;
+}
+.contacts input[type=email]:focus{
+    color: brown;
+    background: gray;
+}
+.contacts form textarea{
+    width: 98%;
+    min-height: 200px;
+    font-size: 16px;
+}
+.contacts form{
+    width: 50%;
+    margin: 2px;
+    float: left;
+}
+.adress {
+    overflow: hidden;
+    max-width: 900px;
+    border: 1px solid;
+}
+.adress h3{
+    text-align: center;
+}
+.map{
+    float: right;
+    display: inline-block;
+}
+.map img{
+    width: 100%;
+    height: 374px;
+}
+
+
+
+/*footer*/
+.footer{
+    background: #ccc;
+    height: 100px;
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+    clear: both;
+}
+.footer p{
+    margin-top: 10px;
+    margin-right: 60px;
+    float: right;
+}
+
+
+#homeworkTable{
+    outline: 2px solid;
+}
+#homeworkTable tr:first-of-type{
+    height: 40px;
+}
+#homeworkTable td{
+    border: 2px solid;
+    border-radius: 8px;
+}
