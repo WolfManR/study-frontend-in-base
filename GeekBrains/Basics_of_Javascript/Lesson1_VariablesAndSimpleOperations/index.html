@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+    <script src="Lesson1.js"></script>
+</head>
+
+<body>
+    1000 + "108" = "1000108" -> type string
+
+    <ul>
+        <li>
+            <b>Async</b>
+            <ul>
+                <li>DOM и DOMContentLoaded не ждёт загрузки скрипта</li>
+                <li>скрипт запускается по мере загрузки не зависимо от порядка объявления</li>
+                <li>обязан быть незавимым от других скриптов напрямую подключённых к странице</li>
+            </ul>
+        </li>
+        <li>
+            <b>Defer</b>
+            <ul>
+                <li>ожидает полной загрузки DOM, загружается до выполнения DOMContentLoaded</li>
+                <li>скрипт загружается не зависимо от порядка объявления, но запускается по порядку объявления</li>
+                <li>используется для скриптов требующих полной структуры DOM</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
