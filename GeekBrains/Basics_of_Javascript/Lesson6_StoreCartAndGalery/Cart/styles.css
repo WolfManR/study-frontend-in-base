@@ -1,0 +1,32 @@
+ul {
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.name {
+  margin-right: 10px;
+}
+
+.name::before {
+  content: "Name:";
+  margin-right: 10px;
+}
+
+.price::before {
+  content: "Price:";
+  margin-right: 10px;
+}
+
+.count::before {
+  content: "Count:";
+  margin-left: 10px;
+  margin-right: 10px;
+}
