@@ -1,0 +1,20 @@
+.field {
+  width: 450px;
+  height: 450px;
+  outline: 1px solid green;
+}
+
+.cell {
+  float: left;
+  width: 150px;
+  height: 150px;
+  outline: 1px solid black;
+}
+
+.cross {
+  background-image: url(./images/cross.svg);
+}
+
+.zero {
+  background-image: url(./images/zero.svg);
+}
